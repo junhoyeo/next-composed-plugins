@@ -10,10 +10,12 @@ export const withPlugins: Plugin = (
 ) => {
   const [plugin, ...rest] = plugins;
 
-  let func: Plugin = plugin as Plugin;
+  let func: Plugin | undefined = undefined;
   let params: any[] = [];
   if (typeof plugin === 'object') {
     [func, ...params] = plugin;
+  } else if (typeof plugin === 'function') {
+    func = plugin;
   }
 
   let result = obj;
