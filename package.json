@@ -1,0 +1,18 @@
+{
+  "name": "next-composed-plugins",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "rm -rf ./lib && tsc"
+  },
+  "repository": "https://github.com/junhoyeo/next-composed-plugins",
+  "author": "Junho Yeo <i@junho.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^3.2.0",
+    "next": "^12.1.6",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  }
+}
