@@ -1,6 +1,8 @@
 # next-composed-plugins
 
 ```ts
+const { withPlugins } = require('next-composed-plugins');
+
 module.exports = withPlugins(
   {
     reactStrictMode: true,
@@ -15,6 +17,7 @@ module.exports = withPlugins(
       withInterceptStdout,
       (text) => (text.includes('Duplicate atom key') ? '' : text),
     ],
+    // Add plugins here
   ],
 );
 ```
